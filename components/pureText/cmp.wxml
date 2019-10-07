@@ -1,0 +1,5 @@
+<!-- components/pureText/cmp.wxml -->
+<view class="container">
+    <view class="main-title">{{mainTitle}}</view>
+    <text class="sub-head">{{subHead}}</text>
+</view>

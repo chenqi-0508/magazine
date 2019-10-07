@@ -1,0 +1,20 @@
+{
+  "usingComponents": {
+    "d-bigImg": "/components/bigImg/cmp",
+    "d-pureText": "/components/pureText/cmp",
+    "d-imgText": "/components/imgText/cmp",
+    "d-nineImg": "/components/nineImg/cmp",
+    "d-video": "/components/video/cmp",
+    "d-tag": "/components/tag/cmp",
+    "d-more": "/components/more/cmp",
+    "d-like": "/components/like/cmp",
+    "d-article": "/components/article/cmp",
+
+    "d-articleList": "/components/articleList/cmp",
+    "d-nav": "/components/nav/cmp",
+    "d-recommend": "/components/recommend/cmp",
+    "d-tagList": "/components/tagList/cmp",
+    "d-add": "/components/add/cmp",
+    "d-loading": "/components/loading/cmp"
+  }
+}

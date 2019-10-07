@@ -1,0 +1,20 @@
+/* components/search/cmp.wxss */
+.search-container{
+    height: 100rpx;
+    display: flex;
+}
+.search-container input{
+    width: 550rpx;
+    height: 80rpx;
+    background-color: #f3f3f3;
+    padding-left: 20rpx;
+    font-size: 28rpx;
+}
+.search-btn{
+    font-size: 28rpx;
+    height: 80rpx;
+    background-color: #fff;
+}
+.search-btn::after{
+    border: none;
+}

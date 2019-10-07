@@ -1,0 +1,23 @@
+<!-- pages/mark/mark.wxml -->
+<view class="mark-container">
+    <view class="user-container">
+        <view class="user-info">
+            <view class="user-name">{{userInfo.nickName}}</view>
+            <view class="user-avatar">
+                <image class="user-img" src="{{userInfo.avatarUrl}}" wx:if="{{authFlag}}" />
+                <!-- <button class="get-user-info" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" wx:if="{{!authFlag}}">
+                    <image class="user-img" src="/images/mark/login.png" wx:if="{{!authFlag}}" />
+                </button> -->
+                <d-imgBtn open-type="getUserInfo" bind:getuserinfo="onGetUserInfo">
+                    <image src="/images/mark/login.png" slot="img" wx:if="{{!authFlag}}"/>
+                </d-imgBtn>
+            </view>
+        </view>
+        <view class="share">
+            <d-imgBtn open-type="share">
+                <image src="/images/mark/relay.png" slot="img"/>
+            </d-imgBtn>
+        </view>
+    </view>
+    <d-articleList article-list="{{articleList}}" more="{{getMore}}" magazine-id="{{magazineId}}"/>
+</view>

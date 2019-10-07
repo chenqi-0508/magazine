@@ -1,0 +1,5 @@
+<!-- components/search/cmp.wxml -->
+<view class="search-container">
+    <input class="input" type="text" placeholder="轻芒什么都有" bindconfirm="onSearch"/>
+    <button class="search-btn">搜索</button>
+</view>

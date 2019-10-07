@@ -1,0 +1,10 @@
+<!--components/recommend/cmp.wxml-->
+<view class="container">
+    <text class="big-title">{{date}}</text>
+    <text class="title">{{title}}</text>
+    <image class="image" src="{{imgSrc}}" wx:if="{{imgSrc}}"/>
+
+    <view class="skeleton" hidden="{{imgSrc}}">
+        <view class="loader"></view>
+    </view>
+</view>

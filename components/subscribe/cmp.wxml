@@ -1,0 +1,2 @@
+<!--components/subscribe/cmp.wxml-->
+<view class="order {{class == 'common' ? '' : 'subscribe'}}" bind:tap="onTap">{{class == 'common' ? '订阅' : '已订阅'}}</view>

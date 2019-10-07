@@ -1,0 +1,40 @@
+/* pages/catalog/catalog.wxss */
+.catalog-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20rpx 20rpx;
+}
+
+.my-magazine-manage{
+    margin-top: 50rpx;
+}
+.my-magazine-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rpx;
+}
+.head-title{
+    font-weight: bold;
+}
+.sub-title{
+    font-size: 30rpx;
+}
+.my-magazine-body{
+    width: 100%;
+}
+.add{
+    margin-right: 20rpx;
+  }
+
+
+.tag-title{
+    margin-bottom: 20rpx;
+}
+.tag-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rpx;
+}
+.tag-list-name{
+    font-size: 32rpx;
+}

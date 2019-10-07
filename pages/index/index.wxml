@@ -1,0 +1,20 @@
+<!--index.wxml-->
+
+<d-nav class="nav" catch:nav="onNav"/>
+
+<view class="loading-container" wx:if="{{loading}}">
+    <d-loading class="loading"/>
+</view>
+
+<d-recommend class="recommend" img-src="{{recommendInfo.imgSrc}}" title="{{recommendInfo.title}}"/>
+
+<d-tagList mark-list="{{markList}}">
+    <d-add slot="before" class="add" wx:if="{{magazineId == 0}}"/>
+    <view slot="after" class="to-catalog" catch:tap="onCatalog" wx:if="{{magazineId == 0}}">•••</view>
+</d-tagList>
+
+<!-- <scroll-view scroll-y  class="scroll-articleList" bindscrolltolower="lower" style="height: 1800rpx;" enable-back-to-top="true">
+    <d-articleList article-list="{{articleList}}" more="{{getMore}}" magazine-id="{{magazineId}}"/>
+</scroll-view> -->
+
+<d-articleList article-list="{{articleList}}" more="{{getMore}}" magazine-id="{{magazineId}}"/>

@@ -1,0 +1,31 @@
+/* components/loading/cmp.wxss */
+.container{
+    position: relative;
+    height: 60rpx;
+}
+.circle{
+    position: absolute;
+    top: 0rpx;
+    left: 50%;
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 50%;
+    background-color: #666;
+    opacity: .6;
+
+    animation: run 2s infinite;
+}
+.circle:nth-of-type(1){
+    animation-delay: 1s;
+}
+@keyframes run{
+    0%{
+        scale: 0;
+    }
+    50%{
+        scale: 1;
+    }
+    100%{
+        scale: 0;
+    }
+}

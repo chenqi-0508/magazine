@@ -1,0 +1,25 @@
+<!--pages/catalog/catalog.wxml-->
+<view class="catalog-container">
+    <d-search/>
+
+    <view class="my-magazine-manage">
+        <view class="my-magazine-head">
+            <text class="head-title">我的杂志</text>
+            <text class="sub-title">管理杂志</text>
+        </view>
+        <view class="my-magazine-body">
+            <d-tagList mark-list="{{tagList}}">
+                <d-add slot="before" class="add" />
+            </d-tagList>
+        </view>
+    </view>
+
+    <view class="tag-container" wx:for="{{tagInfoList}}" wx:key="title">
+        <view class="tag-title">{{item.title}} > </view>
+        <view class="tag-list" wx:for="{{item.tagList}}" wx:for-item="tagListItem" wx:key="tag">
+            <view class="tag-list-name"># {{tagListItem.tag}}</view>
+            <!-- 订阅 -->
+            <d-subscribe tag-obj="{{tagListItem}}" catch:tap="getTagList"/>
+        </view>
+    </view>
+</view>
